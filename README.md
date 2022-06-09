@@ -38,7 +38,7 @@ int main(){
 
                                 if(number==rand()%100){
                                     printf("lottery winning number is %d\n\n",rand()%100);
-                                    smoney=smoney*7;
+                                    smoney=money*7;
                                     printf("lottery winning\n");
                                     printf("you are winner congratslution\n your total money is %d\n\n",smoney);
                                     printf("if you want to play again press1\n\n");
@@ -53,6 +53,7 @@ int main(){
 
                                     }else{
                                         printf("thanks for playing mista");
+                                        exit(0);
 
                                     }
 
