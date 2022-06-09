@@ -9,6 +9,7 @@ int main(){
     int smoney=0;
     int money=0;
     int numb=0;
+    int winningnumber=0;
 
     printf("$$$ welcome from the game $$$\n");
     printf("enter your age\n");
@@ -36,8 +37,9 @@ int main(){
                                 printf("enter your lottery number");
                                 scanf("%d",&number);
 
-                                if(number==rand()%100){
-                                    printf("lottery winning number is %d\n\n",rand()%100);
+                                    winningnumber=rand()%100;
+                                    if(number==winningnumber){
+                                    printf("lottery winning number is %d\n\n",winningnumber);
                                     smoney=money*7;
                                     printf("lottery winning\n");
                                     printf("you are winner congratslution\n your total money is %d\n\n",smoney);
@@ -64,7 +66,7 @@ int main(){
 
 
                                 }else{
-                                    printf("lottery winning number is %d\n",rand()%100);
+                                    printf("lottery winning number is %d\n",winningnumber);
                                     printf("you lose try again!!\n");
                                     smoney=smoney-money;
                                     printf("your total money is %d\n",smoney);
@@ -132,3 +134,4 @@ int main(){
 
     return 0;
     }
+
